@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box; 
+} 
+
+body {
+  /* background-image: url(../images/reverse.png); */
+  font-family: 'Montserrat', sans-serif;  
+  background-repeat: no-repeat;
+  background-size: cover; 
+  text-decoration: white; 
+  text-shadow: 0 0 20px 0 black; 
+  text-align: center; 
+  background-color: rgb(94, 213, 211);  
+  padding: 172px; 
+}  
+
+
+h1 { 
+  color: white;
+  font-weight: 900;
+  font-size: 45px; 
+}
+
+button {
+  width:115px; 
+  height: 30px;
+  font-size: 17px;
+  border-radius: 2px;
+}
+
+input {
+  height:30px; 
+  width:300px; 
+  font-size: 17px;
+  border-radius: 2px;
+}
+
+ul{
+  list-style-type: none; 
+}
+
+
+
+
+

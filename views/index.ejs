@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Check to see if your name is a Palindrome!</h1> 
+    <form action="/submit" method="post">
+      <input id="name" type="text" name="word" placeholder="Enter Name">
+      <button type="submit" > ♻️ </button> 
+    </form>
+    
+    <div>
+      <h3>Word Bank</h3> 
+      <ul>
+        <% for (let i=0; i<words.length; i++) { %> 
+         <li>Is "<%= words[i].input %>" a Palindrome? <%= words[i].isAPalindrome %>
+        <button class="delete" value="<%= words[i]._id %>"> 🗑️ </button>
+        </li>
+      <% } %>
+      </ul>
+    </div>
+
+    <h2 id="result"></h2>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body> 
+</html>
+
